@@ -1,0 +1,42 @@
+.guide{
+    &-content {
+        transition: all 0.2s ease-in-out 0s;
+        width: 100%;
+        padding: 20px 20px 0px;
+        border-left: 1px solid rgb(242, 243, 245);
+        overflow: overlay;
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgb(29, 33, 41);
+        margin-bottom: 16px;
+    }
+
+    &-ul {
+        padding: 0;
+        font-size: 13px;
+        line-height: 22px;
+        color: rgb(78, 89, 105);
+        list-style: none;
+    }
+
+    &-li {
+        margin-bottom: 16px;
+        span {
+            font-weight: 500;
+            color: rgb(29, 33, 41);
+        }
+    }
+
+    &-ip {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 160px;
+        transform: translateY(33px);
+    }
+
+}

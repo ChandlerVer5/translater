@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  overflow: hidden;
+  font-family: system-ui, 'PingFang SC', 'Helvetica Neue', 'Microsoft Yahei',
+    sans-serif;
+  word-break: break-all;
+}
+
+img {
+    border-style: none;
+}
+
+*{ box-sizing: border-box}
+
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+
+  .clear-btn{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    padding: 4px;
+  }
+  &>div{
+     height: 100%;
+     box-shadow: rgba(35, 46, 67, 0.06) 0px 4px 10px;
+     border: 1px solid rgb(242, 243, 245);
+  }
+}
+
+.translater {
+    &-wrapper {
+        background: rgb(255, 255, 255);
+    }
+    &-editor{
+        height: 100%;
+        width: 100%;
+        padding: 18px;
+        background: rgb(255, 255, 255);
+        color: rgb(29, 33, 41);
+        transition: height 0.3s ease-in-out 0s;
+        word-break: break-word;
+        overflow-y: scroll;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:focus-visible{
+          outline:none;
+        }
+    }
+    &-header {
+        position: relative;
+        height: 56px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 12px;
+        border-bottom: 1px solid rgb(242, 243, 245);
+    }
+}

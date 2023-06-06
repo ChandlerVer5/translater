@@ -1,0 +1,25 @@
+.translate {
+    &-empty {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: rgb(247, 248, 250);
+        border-radius: 6px;
+        padding: 24px 0px 28px;
+    }
+
+    &-nosatisfied {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: rgb(134, 144, 156);
+        margin: 16px 0px 20px;
+
+        span {
+            color: rgb(48, 83, 255);
+            cursor: pointer;
+        }
+    }
+}
